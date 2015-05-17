@@ -1,0 +1,9 @@
+<div ng-transclude></div>
+
+<div class="input-errors hidden text-right" data-ng-show="showValidationMessages">
+    <div data-ng-repeat="(errorType, error) in field.$error">
+        <span class="text-danger" data-ng-show="error && showValidationMessages">
+            {{ formErrorMessages[errorType] || formErrorMessages['default'] }}
+        </span>
+    </div>
+</div>

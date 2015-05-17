@@ -1,0 +1,11 @@
+<div class="btd-edit-on-click-wrapper">
+    <span data-ng-hide="editor.enabled">
+        {{ prefix }}
+        {{ value }}
+        {{ suffix }}
+        <i class="fa fa-pencil-square-o" data-ng-click="enableEditMode()"></i>
+    </span>
+    <div data-ng-show="editor.enabled">
+        <input type="text" data-ng-model="value">
+    </div>
+</div>
